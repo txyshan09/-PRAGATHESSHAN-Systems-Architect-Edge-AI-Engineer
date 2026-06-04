@@ -33,10 +33,17 @@ jobs:
 
     - name: Execute Python Engine Tests
       run: |
-        python q-logist/q_logist_optimizer.py
-        python ev3-digital-twin/twin_telemetry.py
-        python vision-ai/vital_sense_engine.py
-        python vision-ai/motion_tracker.py
+        echo "🏃 Validating Q-Logist..."
+        cd q-logist && python q_logist_optimizer.py && cd ..
+        
+        echo "🏃 Validating Digital Twin..."
+        cd ev3-digital-twin && python twin_telemetry.py && cd ..
+        
+        echo "🏃 Validating Vision Core..."
+        cd vision-ai && python vital_sense_engine.py && cd ..
+        
+        echo "🏃 Validating Motion Tracker..."
+        cd vision-ai && python motion_tracker.py && cd ..
 
     - name: Setup PHP Environment
       uses: shivammathur/setup-php@v2
