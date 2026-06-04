@@ -10,9 +10,17 @@ jobs:
   execute-tests:
     runs-on: ubuntu-latest
 
+    # Overriding global environmental time matrices for all steps inside the cloud container
+    env:
+      GIT_AUTHOR_DATE: "2026-05-15T14:30:00"
+      GIT_COMMITTER_DATE: "2026-05-15T14:30:00"
+      TZ: "Asia/Kuala_Lumpur" # Locks the runtime timezone constraint
+
     steps:
     - name: Checkout Repository Code
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Pulls full git commit logs instead of an isolated shallow state
 
     - name: Setup Python Environment
       uses: actions/setup-python@v5
