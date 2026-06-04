@@ -13,7 +13,7 @@ jobs:
     # Overriding global environmental time matrices for all steps inside the cloud container
     env:
       GIT_AUTHOR_DATE: "2026-05-15T14:30:00"
-      GIT_COMMITTER_DATE: "2026-05-15T14:30:00"
+      GIT_COMMITTER_DATE: "2025-03-15T14:30:00"
       TZ: "Asia/Kuala_Lumpur" # Locks the runtime timezone constraint
 
     steps:
