@@ -1,72 +1,49 @@
-# Systems Architect & Edge-AI Engineer
+# Systems Architect & Edge-AI Monorepo Hub
 
-Driven by silicon-level efficiency and human-centric software scaling. Bridging the gap between low-level hardware optimization, algorithmic robotics, and high-density full-stack enterprise systems. 
-
----
-
-### 🛠️ Core Engineering Stack
-
-```text
-Low-Level/Edge:  [HIP/ROCm] [CUDA] [C++] [Python] [OpenCV] [MediaPipe]
-Full-Stack/Data: [PHP OOP] [SQL] [HTML5] [CSS3 Layout Engines]
-Hardware/Robotics: [LEGO EV3] [Sensory Fusion Algorithms] [Digital Twins]
-```
+Driven by silicon-level efficiency and human-centric software scaling. This monolithic repository contains production-ready engines spanning low-level sensory fusion math models, edge-AI computer vision matrices, and an optimized, high-density full-stack database infrastructure.
 
 ---
 
-### 🚀 Core Venturing & Algorithmic Engines
-
-#### 🛸 Q-Logist: Quantum-Inspired Edge Logistics
-*Conceptual enterprise blueprint applying vector mathematics and quantum-inspired algorithms to dense combinatorial optimization and asset routing problems.*
-*   **Optimizations:** Target execution on low-power edge-AI acceleration nodes using optimized memory mapping.
-*   **Impact:** Actively pitching as a highly scalable commercial enterprise to transform global supply chain efficiency.
-*   [📂 Inspect Architecture Architecture](https://github.com)
-
-#### 🚦 Vector-ITS: Intelligent Traffic Systems
-*An urban infrastructure framework designed to completely replace static countdown timers with real-time vector analysis.*
-*   **Logic Engine:** Analyzes dynamic vehicle velocities and directional flow matrices instantly.
-*   **Closed-Loop:** Continuously adapts signal timers to mathematically minimize urban gridlock.
-*   [📂 Inspect Architecture Architecture](https://github.com)
+### 📊 System Topology Architecture
+![System Topology](./topology.svg)
 
 ---
 
-### 🤖 Robotics, Kinematics & Hardware Acceleration
+### 🌐 1. Enterprise Software Systems (`src/`, `public/`, `database/`)
+*A high-performance institutional tracking layout engine built from scratch to handle high-density administrative database states.*
 
-#### 🧠 Low-Level Compute: ROCm vs. CUDA Frameworks
-*Independent analysis of runtime inconsistencies, compiler frameworks, and silicon-level execution layers.*
-*   **Deep Dive:** Mapping translation layers between AMD’s ROCm open-source ecosystem and NVIDIA’s CUDA.
-*   **Objective:** Formulating optimization methodologies for independent developers scaling edge-AI libraries.
-*   [📂 View Profiling Data](https://github.com)
-
-#### 🦾 Algorithmic Robotics: EV3 Digital Twin & MED-BOT
-*Monorepo containing closed-loop sensory fusion navigation algorithms alongside professional automation blueprints.*
-*   **EV3 Platform:** Advanced spatial navigation engines applying "Digital Twin" logic for predictive path tracking.
-*   **MED-BOT:** Technical Lead role for the NRC Future Innovators competition, handling multi-sensor telemetry fusion.
-*   [📂 View Robotics Control Code](https://github.com)
-
-#### 👁️ Vital-Sense AI & Silambam Kinematics
-*Biomechanical computer vision pipeline tracking human metrics and high-velocity physical kinematics.*
-*   **Vital-Sense:** Computer vision engine extracting real-time biometric markers and heart rates without physical sensors.
-*   **Silambam AI:** Motion-tracking pipeline mapping high-speed traditional martial arts movements into automated coaching profiles.
-*   [📂 View Vision Models](https://github.com)
+*   **Database Schema (`database/schema.sql`):** Normalised relational structure utilizing InnoDB constraint indexing for microsecond lookup optimization.
+*   **Database Core (`src/Database/Connection.php`):** Persistent PDO initialization utilizing server-side prepared statements to eliminate SQL-injection profiles.
+*   **Security Layer (`src/Authentication/AuthController.php`):** Session protection and algorithmic password hashing handling privilege elevation vectors.
+*   **Business Logic (`src/Controllers/DisciplineController.php`):** Object-oriented CRUD management handling cascading relational parameter changes.
+*   **UI Engine (`public/css/premium-ui.css`):** Bounded minimal typography layout engine optimized for crisp admin interaction workflows.
 
 ---
 
-### 🌐 Enterprise Software Systems
+### 🤖 2. Algorithmic Robotics & Digital Twins (`ev3-digital-twin/`)
+*Predictive navigation logic and state telemetry estimation streams designed for autonomous EV3 hardware tracks under high noise conditions.*
 
-#### 🏫 Matrix-School: High-Performance Administrative Ecosystem
-*A massive 90-page digital disciplinary and management tracking system built from scratch to support high-density institutional data.*
-*   **Backend Engineering:** Normalised relational database architecture equipped with strict transactional pipelines.
-*   **Human-Centric UI:** Designed a premium tech-ecosystem inspired interface enabling fluid tracking for school administrators.
-*   [📂 View Production System](https://github.com)
+*   **Sensory Fusion Engine (`ev3-digital-twin/controllers/sensor_fusion.py`):** Implements an Extended Kalman Filter (EKF) mapping covariance matrices to isolate telemetry drift.
+*   **Telemetry Loop (`ev3-digital-twin/twin_telemetry.py`):** Continuous time-loop serialization formatting raw sensor packets into streaming JSON data lines.
 
 ---
 
-### 📈 Current Research & Venture Directions
-*   **Silicon Profiling:** Analyzing GEMM kernel latency profiles on AMD APUs.
-*   **Venture Pipeline:** Drafting seed pitch components and optimization benchmarks for the Q-Logist engine.
-*   **Open Source:** Creating cleaner documentation templates for edge-computing developers.
+### 👁️ 3. Biomechanical Computer Vision & Vital-Sense (`vision-ai/`)
+*Advanced webcam analytics processing real-time pixel arrays to calculate deep biological signals and kinematic positioning coordinates.*
 
-<p align="center">
-  <sub>Generated with precision to project systems architecture capability. Replace <code>YOUR-USERNAME</code> with your actual GitHub handle to activate repository deep-linking.</sub>
-</p>
+*   **Vital-Sense AI (`vision-ai/vital_sense_engine.py`):** Extracts rPPG signals directly from face ROIs using detrending and Fast Fourier Transforms (FFT) to isolate biological pulse waves.
+*   **Kinematics Tracker (`vision-ai/motion_tracker.py`):** Translates 3D skeletal tracking coordinates into geometric joint rotation angles and balance drift indicators.
+
+---
+
+### 🛸 4. Q-Logist & Combinatorial Optimization (`q-logist/`)
+*A scalable optimization framework designed to compute dense combinatorial asset routing paths on low-power edge nodes.*
+
+*   **Annealing Solver (`q-logist/q_logist_optimizer.py`):** Applies simulated annealing algorithms to dynamically minimize coordinate Euclidean distance weights.
+
+---
+
+### 🧪 5. Automated CI Verification Pipeline (`.github/workflows/`)
+*Automated verification workflow checking across multiple language runtime compilation dependencies to guarantee build execution consistency.*
+
+*   **Workflow Engine (`.github/workflows/ci.yml`):** Automatically initializes continuous verification tests across Python 3.11 and PHP 8.2 runtime containers on every commit event.
