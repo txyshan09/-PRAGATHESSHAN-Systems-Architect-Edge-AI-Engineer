@@ -1,0 +1,74 @@
+<svg xmlns="http://w3.org" viewBox="0 0 800 320" width="100%" height="100%">
+  <!-- Style Definition for Ultra-Premium Dark Theme -->
+  <style>
+    .bg { fill: #0d1117; }
+    .grid { stroke: #21262d; stroke-width: 1; stroke-dasharray: 4,4; }
+    .box { fill: #161b22; stroke: #30363d; stroke-width: 1.5; rx: 6px; }
+    .box-highlight { fill: #161b22; stroke: #58a6ff; stroke-width: 2; rx: 6px; }
+    .text-title { fill: #c9d1d9; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; }
+    .text-subtitle { fill: #8b949e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; }
+    .text-tag { fill: #58a6ff; font-family: monospace; font-size: 10px; font-weight: bold; }
+    .line { stroke: #30363d; stroke-width: 1.5; fill: none; }
+    .line-active { stroke: #58a6ff; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+    .dot { fill: #58a6ff; }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" class="bg"/>
+  
+  <!-- Subtle Grid Layout Lines -->
+  <line x1="200" y1="0" x2="200" y2="320" class="grid" />
+  <line x1="600" y1="0" x2="600" y2="320" class="grid" />
+
+  <!-- COLUMN 1: HARDWARE & EDGE PLATFORMS (0 - 200) -->
+  <rect x="20" y="40" width="160" height="70" class="box" />
+  <text x="35" y="65" class="text-title">Compute Layer</text>
+  <text x="35" y="82" class="text-subtitle">ROCm vs. CUDA Kernels</text>
+  <text x="35" y="98" class="text-tag">HIP / LLVM / Assembly</text>
+
+  <rect x="20" y="140" width="160" height="70" class="box" />
+  <text x="35" y="165" class="text-title">Kinematics &amp; Vision</text>
+  <text x="35" y="182" class="text-subtitle">Vital-Sense &amp; Silambam</text>
+  <text x="35" y="198" class="text-tag">OpenCV / MediaPipe</text>
+
+  <rect x="20" y="240" width="160" height="70" class="box" />
+  <text x="35" y="265" class="text-title">Autonomous Edge</text>
+  <text x="35" y="282" class="text-subtitle">EV3 Telemetry Loop</text>
+  <text x="35" y="298" class="text-tag">Python / Sensor Fusion</text>
+
+  <!-- COLUMN 2: ALGORITHMIC CORE & INFRASTRUCTURE (200 - 600) -->
+  <rect x="260" y="70" width="280" height="80" class="box-highlight" />
+  <text x="280" y="98" class="text-title">Q-Logist &amp; Vector-ITS Engine</text>
+  <text x="280" y="118" class="text-subtitle">Quantum-Inspired Combinatorial Optimization</text>
+  <text x="280" y="136" class="text-tag">VECTOR MATH / SIMULATED ANNEALING</text>
+
+  <rect x="260" y="190" width="280" height="70" class="box" />
+  <text x="280" y="215" class="text-title">MED-BOT Automation Pipeline</text>
+  <text x="280" y="232" class="text-subtitle">Closed-Loop High-Precision Control</text>
+  <text x="280" y="248" class="text-tag">MULTI-SENSOR TELEMETRY FUSION</text>
+
+  <!-- COLUMN 3: HIGH-DENSITY ENTERPRISE SYSTEMS (600 - 800) -->
+  <rect x="620" y="115" width="160" height="90" class="box" />
+  <text x="635" y="142" class="text-title">Matrix-School ERP</text>
+  <text x="635" y="160" class="text-subtitle">90-Page Secure Engine</text>
+  <text x="635" y="176" class="text-subtitle">Relational Analytics</text>
+  <text x="635" y="192" class="text-tag">PHP OOP / SECURE SQL</text>
+
+  <!-- CONNECTIVE EDGE PIPELINES -->
+  <!-- Compute Layer to Optimization Engine -->
+  <path d="M 180,75 L 220,75 L 220,110 L 260,110" class="line-active" />
+  <circle cx="260" cy="110" r="3" class="dot" />
+
+  <!-- Vision Layer to Optimization Engine -->
+  <path d="M 180,175 L 220,175 L 220,130 L 260,130" class="line" />
+
+  <!-- Robotics to MED-BOT -->
+  <path d="M 180,275 L 220,275 L 220,225 L 260,225" class="line" />
+  
+  <!-- Optimization Engine to Enterprise Backend -->
+  <path d="M 540,110 L 580,110 L 580,145 L 620,145" class="line-active" />
+  <circle cx="620" cy="145" r="3" class="dot" />
+
+  <!-- MED-BOT to Enterprise Backend -->
+  <path d="M 540,225 L 580,225 L 580,175 L 620,175" class="line" />
+</svg>
